@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+      <header>This is a test</header>
+      <div id="top">
+        <div id="p1Div"><p class="nameSpace" id="p1NameSpace"></p>Player 1<p class="turnSymbol">X</p></div>
+        <div class="gameBoard">
+            <div class="boardDiv" data-board-number="0"></div>
+            <div class="boardDiv" data-board-number="1"></div>
+            <div class="boardDiv" data-board-number="2"></div>
+            <div class="boardDiv" data-board-number="3"></div>
+            <div class="boardDiv" data-board-number="4"></div>
+            <div class="boardDiv" data-board-number="5"></div>
+            <div class="boardDiv" data-board-number="6"></div>
+            <div class="boardDiv" data-board-number="7"></div>
+            <div class="boardDiv" data-board-number="8"></div>
+        </div>
+        <div id="p2Div"><p class="nameSpace" id="p2NameSpace"></p>Player 2<p class=TurnSymbol>O</p></div>
+      </div>
+      <div class="bottom">
+        <div class="scoreBoard"></div>
+        <div class="buttons"><button id="newGame">New Game</button>
+          <div id="newPlayerModal" class="modalContainer">
+            <div class="modal">
+              <div class="modalHeader">
+                <span class="close">&times;</span>
+                <h2>Players</h2>
+              </div>
+              <div class="modalBody">
+                <form id="playerInfo">
+                  <p>Player 1</p>
+                  <label for ="playerName">Name:</label>
+                  <input type="text" id="p1Name" name="playerName">
+                  <p>Player 2</p>
+                  <label for ="playerName">Name: </label>
+                  <input type="text" id="p2Name" name="playerName">
+                  <br>
+                  <button type="button" id="submit">Submit</button>
+              </form>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>  
+    <script src="script.js"></script> 
+  </body>
+</html>
