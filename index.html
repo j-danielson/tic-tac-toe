@@ -6,10 +6,10 @@
   <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
-      <header>This is a test</header>
+      <header>Under Construction</header>
       <div id="top">
-        <div id="p1Div"><p class="nameSpace" id="p1NameSpace"></p>Player 1<p class="turnSymbol">X</p></div>
-        <div class="gameBoard">
+        <div id="p1Div"><p class="nameSpace, X" id="p1NameSpace">Player 1</p><p class="turnSymbol, X" id="XSymbol">X</p></div>
+        <div id="gameBoard">
             <div class="boardDiv" data-board-number="0"></div>
             <div class="boardDiv" data-board-number="1"></div>
             <div class="boardDiv" data-board-number="2"></div>
@@ -20,11 +20,18 @@
             <div class="boardDiv" data-board-number="7"></div>
             <div class="boardDiv" data-board-number="8"></div>
         </div>
-        <div id="p2Div"><p class="nameSpace" id="p2NameSpace"></p>Player 2<p class=TurnSymbol>O</p></div>
+        <div id="p2Div"><p class="nameSpace, O" id="p2NameSpace">Player 2</p><p class="turnSymbol, O" id="oSymbol">O</p></div>
       </div>
-      <div class="bottom">
-        <div class="scoreBoard"></div>
-        <div class="buttons"><button id="newGame">New Game</button>
+      <div id="bottom">
+        <div class="scoreBoard" id="1Score"><p id="p1NameScore">Player 1</p><p id="p1ScoreSpace">0</p></div>
+        <div class="buttons">
+          <button id="newGame">New Game</button>
+          <button id="newRound">New Round</button>
+          <button id="quickPlay">Quick Play</button>
+        </div>
+        <div class="scoreBoard" id="2Score"><p id="p2NameScore">Player 2</p><p id="p2ScoreSpace">0</p></div> 
+        
+        <!--Modal Boxes-->
           <div id="newPlayerModal" class="modalContainer">
             <div class="modal">
               <div class="modalHeader">
@@ -45,7 +52,19 @@
               </div>
             </div>
             </div>
-        </div>
+            <div id="restartModal" class="modalContainer">
+              <div class="restartModal">
+              <div class="modalHeader">
+                <span class="close">&times;</span>
+              </div>
+              <div class="modalBody">
+                <p id="restartBody">Are you sure you want to start a new game?</p>
+                  <button type="button" id="yesBtn">Yes</button>
+                  <button type="button" id="cancelBtn">Cancel</button>
+              </div>
+            </div>
+            </div>
+        
       </div>  
     <script src="script.js"></script> 
   </body>
